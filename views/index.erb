@@ -1,0 +1,8 @@
+<html>
+  <body>
+    <h1>SHARED_FILES</h1>
+    <% @files.each{ |fname| %>
+    <p><a href="/file/get?fid=<%= fname %>"><%= fname %></a><p>
+    <% } %>
+  </body>
+</html>
